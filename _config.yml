@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Template Jupyter-book
-author: Loïc Bachelot
+title: 2025 ML TSC Jupyterbook
+author: Amanda Thomas et al.
 logo: Crescent_logo.png
 
 # Force re-execution of notebooks on each build.
@@ -25,7 +25,7 @@ sphinx:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/cascadiaquakes/jupyter-book-template  # Online location of your book
+  url: https://github.com/cascadiaquakes/2025_ML_TSC  # Online location of your book
  # path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
