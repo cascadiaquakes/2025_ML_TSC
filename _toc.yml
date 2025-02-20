@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: notebooks/1_first_nb
+- file: notebooks/2_second_nb
+- file: notebooks/3_third_nb
+- file: conclusion
