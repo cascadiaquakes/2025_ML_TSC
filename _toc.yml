@@ -3,8 +3,10 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: notebooks/1_first_nb
-- file: notebooks/2_second_nb
-- file: notebooks/3_third_nb
-- file: conclusion
+title: Introduction
+parts:
+- caption: Seismic Phase Detection
+  chapters:
+  - file: notebooks/curated_pnw_dataset.ipynb
+  - file: notebooks/phase_detection_cnn.ipynb
+  - file: notebooks/seisbench.ipynb
