@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 title: Introduction
+- file: notebooks/Amanda/intro_to_ferndale.ipynb
 parts:
 - caption: Seismic Phase Detection
   chapters:
