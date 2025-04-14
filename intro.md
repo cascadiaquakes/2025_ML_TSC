@@ -17,29 +17,18 @@ By the end of this short course, participants will be able to:
 - Design end-to-end machine learning workflows tailored to specific seismic networks or research needs. 
 - Collaborate on participant-led exercises to improve catalog quality and reliability. 
 
-## Tentative Agenda
+##  Agenda
 
-**Day 1:**
+| Time             | Day 1 (Mon)                           | Day 2 (Tue)                             | Day 3 (Wed)                              |
+|------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
+| 9:00 – 10:30am   | Research Talk: Yiyu Ni speaks about a curated ML PNW             | Research Talk: Ian McBreatry gives an intro to Association             | Research Talk: Felix Waldhauser shows how to build precise earthquake catalogs             |
+| 10:30 – 11:00am  | Coffee Break                          | Coffee Break                            | Coffee Break                               |
+| 11:00 – 12:30pm  | Hack: Training a Phase Picker        | Lecture: Training a Graph Network          | Hack: Event Relocations                     |
+| 12:30 – 1:30pm   | Lunch                                 | Lunch                                   | Lunch                                      |
+| 1:30 – 2:30pm    | Lecture: Evaluating Model Performance                   | Hack: X                  | Science talks / Karaoke / other     |
+| 2:30 – 3:00pm    | Research Talk: Amanda talk on CNN & LFE detection                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
+| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     | Hackathon: Establishing Quality Control Metrics?      |                                           |
 
-- Curating machine learning datasets with a focus on the Pacific Northwest 
-- Introduction to Seisbench
-- Build and train deep learning models for detecting, picking, using Seisbench
-- Research talks by Yiyu Ni (UW) and Amanda Thomas (UC Davis) 
-- Hackathon: Phase detection on continuous data 
-
-**Day 2:**
-
-- Phase Association  
-- Application to Picks from Day 1 
-- Event Discrimination 
-- Research talks by Ian McBreatry (Stanford) & Akash Kharita (UW) 
-- Hackathon: Associate on Day 1 detections 
-
-**Day 3:**
-
-- Earthquake Location & Relocation 
-- Research talks by Felix Waldhauser (Columbia University)  
-- Hackathon: Quality-control on machine learning catalogs 
 
 ## Prerequisites  
 
@@ -56,7 +45,6 @@ By the end of this short course, participants will be able to:
 
 2. Must have a laptop computer capable of accessing the internet. 
 
-3. Applicants are currently based at a U.S. institution. 
 
 ## Instructors
 
@@ -65,3 +53,5 @@ By the end of this short course, participants will be able to:
 [Ian McBrearty](https://www.researchgate.net/profile/Ian-Mcbrearty) (Stanford University)<br>
 [Loïc Bachelot](https://loicbachelot.github.io/) (University of Oregon)<br>
 [Yiyu Ni](https://niyiyu.github.io/) (University of Washington)<br>
+[Akash Kharita](https://sites.google.com/view/akashkharita/home) (University of Washington)<br>
+[Felix Waldhauser](https://www.ldeo.columbia.edu/~felixw/) (Columbia University)<br>
