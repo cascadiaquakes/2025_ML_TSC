@@ -10,7 +10,7 @@ parts:
   - file: notebooks/Amanda/intro_to_ferndale.ipynb
 - caption: Seismic Phase Detection
   chapters:
-  - file: notebooks/Yiyu/curated_pnw_dataset_seisbench.ipynb
+  - file: notebooks/niyiyu/curated_pnw_dataset_seisbench.ipynb
   - file: notebooks/Loic/UNet/add_training_split.ipynb
   - file: notebooks/make_unet.ipynb
   - file: notebooks/unet_performance_metrics.ipynb
