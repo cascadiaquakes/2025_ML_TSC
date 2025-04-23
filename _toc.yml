@@ -15,4 +15,3 @@ parts:
   - file: notebooks/make_unet.ipynb
   - file: notebooks/unet_performance_metrics.ipynb
   - file: notebooks/apply_unet.ipynb
-  
