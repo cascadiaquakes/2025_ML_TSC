@@ -15,3 +15,6 @@ parts:
   - file: notebooks/Loic/UNet/make_unet_annotated.ipynb
   - file: notebooks/Amanda/unet_performance_metrics.ipynb
   - file: notebooks/Amanda/apply_unet.ipynb
+- caption: Graph Neural Network - Theory
+  chapters:
+  - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
