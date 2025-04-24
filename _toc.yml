@@ -13,6 +13,5 @@ parts:
   - file: notebooks/niyiyu/curated_pnw_dataset_seisbench.ipynb
   - file: notebooks/Loic/UNet/add_training_split.ipynb
   - file: notebooks/Loic/UNet/make_unet_annotated.ipynb
-  - file: notebooks/Amanda/make_unet.ipynb
-  - file: notebooks/Amadna/unet_performance_metrics.ipynb
+  - file: notebooks/Amanda/unet_performance_metrics.ipynb
   - file: notebooks/Amanda/apply_unet.ipynb
