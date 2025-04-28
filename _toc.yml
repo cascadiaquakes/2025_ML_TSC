@@ -18,3 +18,4 @@ parts:
 - caption: Graph Neural Network - Theory
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
+  - file: notebooks/Loic/GNN/GNN_node_regression.ipynb
