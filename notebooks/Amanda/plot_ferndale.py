@@ -12,11 +12,8 @@ import pandas as pd
 %matplotlib notebook
 
 # Load station data
-df = pd.read_csv("../data/station2.txt", 
-                 delim_whitespace=True, 
-                 header=None, 
-                 usecols=[0, 1, 2], 
-                 names=["name", "lat", "lon"])
+df = pd.read_csv("../data/gmap-stations.txt", 
+                 delimiter='|')
 
 # Ferndale earthquake info (USGS event ID: nc73798970)
 eq_lat = 40.52500   
@@ -46,8 +43,8 @@ fig.coast(shorelines="1/0.5p,black",
           resolution="f")
 
 # Plot stations
-fig.plot(x=df["lon"], 
-         y=df["lat"], 
+fig.plot(x=df["Longitude"], 
+         y=df["Latitude"], 
          style="t0.5c", 
          fill="blue", 
          pen="black", 
@@ -55,9 +52,9 @@ fig.plot(x=df["lon"],
 
 # Add station names
 for _, row in df.iterrows():
-    fig.text(x=row["lon"], 
-             y=row["lat"], 
-             text=row["name"], 
+    fig.text(x=row["Longitude"], 
+             y=row["Latitude"], 
+             text=row["Station"], 
              font="14p,Helvetica,black", 
              offset="0.3c/0.6c")
     
