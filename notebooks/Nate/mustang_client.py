@@ -6,15 +6,44 @@
 :license: GPLv3
 :purpose: A lightweight MUSTANG query client that returns formatted pandas DataFrames
     of queried time-series.
-
 """
 
-
 import requests
+import warnings
 import pandas as pd
 from collections import deque
 
+# MUSTANG Web Service Base URL
 BASE_URL = 'http://service.iris.edu/mustang/measurements/1'
+# Mustang Metrics (Including TS PROTOTYPE)
+MMETS = ['amplifier_saturation','asl_coherence',
+         'calibration_signal','clock_locked',
+         'cross_talk','data_latency',
+         'dc_offset','dead_channel_gsn',
+         'dead_channel_lin','digital_filter_charging',
+         'digitizer_clipping','event_begin',
+         'event_end','event_in_progress',
+         'feed_latency','glitches',
+         'gsn_timing','max_gap',
+         'max_range','max_stalta',
+         'metric_error','missing_padded_data',
+         'num_gaps','num_overlaps','num_spikes'
+         'orientation_check','pct_above_nhnm',
+         'percent_availability','polarity_check',
+         'pressure_effects',
+         'sample_max','sample_min',
+         'sample_mean','sample_median','sample_rate_channel',
+         'sample_rate_resp','sample_rms','sample_snr',
+         'sample_unique','spikes','suspect_time_tag',
+         'telemetry_sync_error','timing_correction','timing_quality',
+         'total_latency','transfer_function',
+         'ts_channel_gap_list','ts_channel_up_time',
+         'ts_gap_length','ts_gap_length_total',
+         'ts_max_gap','ts_max_gap_total','ts_num_gaps',
+         'ts_num_gaps_total','ts_percent_availability',
+         'ts_percent_availability_total']
+
+
 
 class MustangClient(object):
     """A simple client for querying MUSTANG quality assessment time series
@@ -43,7 +72,7 @@ class MustangClient(object):
         self._nodata = nodata
         
 
-    def query_mustang(self, metric, **options):
+    def get_metrics(self, metric, indexing='start', **options):
         """
         Compose and execute a mustang metric query using key-word arguments and strings
         as defined in the MUSTANG documentation:
@@ -57,7 +86,7 @@ class MustangClient(object):
         """
         full_str = self._compose_query(metric, **options)
         payload = self._cache_query(full_str)
-        df = self._parse_payload_text(payload)
+        df = self._parse_payload_text(payload, indexing=indexing)
         return df
     
 
@@ -94,7 +123,7 @@ class MustangClient(object):
         :rtype: _type_
         """        
         options.update({'format':'text'})
-
+        metric = self._validate_metric(metric)
         qstr = f'query?metric={metric}'
         for _k, _v in options.items():
             qstr += f'&{_k}={_v}'
@@ -103,7 +132,26 @@ class MustangClient(object):
         full_str = f'{self.base_url}/{qstr}&nodata={self._nodata}'
         return full_str
 
-    def _parse_payload_text(self, payload):
+    def _validate_metric(self, metric):
+        if ' ' in metric:
+            raise ValueError('metric cannot include whitespaces')
+        if isinstance(metric, list):
+            parts = metric
+        elif isinstance(metric, str):
+            parts = metric.split(',')
+        else:
+            raise TypeError('metric must be type str or a list-like containing individual metric name strings')
+        mets = set([])
+        for _p in parts:
+            if _p not in MMETS:
+                warnings.warn(f'{_p} is not included in MUSTANG metrics - skipping')
+            else:
+                mets.add(_p)
+        mets = list(mets)
+        return ','.join(mets)
+
+
+    def _parse_payload_text(self, payload, indexing=None):
         """Parse a single or multi-metric text output from a payload into
         a dictionary of pandas DataFrames for each metric. Dictionary is
         keyed by metric name as formatted for the MUSTANG query
@@ -154,31 +202,49 @@ class MustangClient(object):
         for _k, _v in datas.items():
             _df = pd.DataFrame(_v, columns=[_k] + hdr[1:])
             outs.update({_k:_df})
-        return outs
+
+
+        if indexing in _df.columns:
+            if indexing in ['start','end','lddate']:
+                _o = pd.DataFrame()
+                for _e, (_k, _v) in enumerate(outs.items()):
+                    if _e == 0:
+                        _o = _v[['target',_k]]
+                        _o.index = _v[indexing].values
+                    else:
+                        _oo = _v[_k]
+                        _oo.index = _v[indexing].values
+                        _o = pd.concat([_o, _oo], axis=1, ignore_index=False)
+                _o.index.name = indexing
+                return _o
+            else:
+                return outs
                 
                     
 
 
 if __name__ == '__main__':
+    # Example query & plot
     import matplotlib.pyplot as plt
     # Run an example on UW.MBW.01
-    query = {'metric':'sample_unique,num_gaps,sample_min',
+    query = {'metric':['sample_unique','num_gaps','sample_min','max_range','percent_availability'],
              'net':'UW',
              'sta':'MBW',
              'loc':'01',
              'cha':'EHZ',
-             'timewindow':'2022-05-01T00:00:00,2023-12-31T00:00:00'}
+             'timewindow':'2023-01-01T00:00:00,2023-12-31T00:00:00'}
     
     client = MustangClient()
-    outs = client.query_mustang(**query)
+    df = client.get_metrics(**query)
     fig = plt.figure()
-    gs = fig.add_gridspec(nrows=3)
+    gs = fig.add_gridspec(nrows=len(query['metric']))
     ax0 = fig.add_subplot(gs[0])
     axes = [ax0]
-    axes += [fig.add_subplot(gs[_e], sharex=ax0) for _e in range(1,3)]
-    for _e, (_k, _v) in enumerate(outs.items()):
-        axes[_e].plot(_v.start, _v[_k],'.', alpha=0.5, label=_k)
+    axes += [fig.add_subplot(gs[_e], sharex=ax0) for _e in range(1,len(query['metric']))]
+    for _e, _m in enumerate(query['metric']):
+        _df = df[_m]
+        axes[_e].plot(_df.index, _df.values,'.-', alpha=0.5, label=_m)
         axes[_e].legend()
-        axes[_e].set_ylabel(_k)
+        axes[_e].set_ylabel(_m)
     plt.show()
 
