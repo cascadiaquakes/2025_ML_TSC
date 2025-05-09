@@ -18,3 +18,7 @@ parts:
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
   - file: notebooks/Loic/GNN/GNN_node_regression_annotated.ipynb
+- caption: Waveform Data QC and Catalog Wrangling
+  chapters:
+  - file: notebooks/Nate/waveform_qc.ipynb
+  - file: notebooks/Nate/catalog_management.ipynb
