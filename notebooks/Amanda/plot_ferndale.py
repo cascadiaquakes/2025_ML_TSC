@@ -7,13 +7,13 @@ Plot the Ferndale earthquake
 
 @author: amt
 """
+
 import pygmt
 import pandas as pd
-%matplotlib notebook
 
 # Load station data
-df = pd.read_csv("../data/gmap-stations.txt", 
-                 delimiter='|')
+df = pd.read_csv("./station_file.txt", 
+                 delimiter=', ')
 
 # Ferndale earthquake info (USGS event ID: nc73798970)
 eq_lat = 40.52500   
@@ -60,7 +60,7 @@ for _, row in df.iterrows():
     
 # Read earthquake
 cols = ["Date","Time","Lat","Lon","Depth","Mag","Magt","Nst","Gap","Clo","RMS","SRC","Event ID"]
-df = pd.read_csv("../data/ncedc.eqs", delim_whitespace=True, skiprows=13, names=cols)
+df = pd.read_csv("./ncedc.eqs", delim_whitespace=True, skiprows=13, names=cols)
 pygmt.makecpt(cmap="viridis", series=[df["Depth"].min(), df["Depth"].max()])
 fig.plot(x=df["Lon"], 
          y=df["Lat"], 
@@ -89,7 +89,7 @@ fig.meca(spec=focal_mech,
          compressionfill="lightorange")
 
 # Plot Faults
-fig.plot(data="../data/gem_active_faults.gmt", 
+fig.plot(data="./gem_active_faults.gmt", 
          pen="1p,darkred", 
          label="Faults")
 
