@@ -55,3 +55,4 @@ By the end of this short course, participants will be able to:
 [Yiyu Ni](https://niyiyu.github.io/) (University of Washington)<br>
 [Akash Kharita](https://sites.google.com/view/akashkharita/home) (University of Washington)<br>
 [Felix Waldhauser](https://www.ldeo.columbia.edu/~felixw/) (Columbia University)<br>
+[Nate Stevens](https://www.researchgate.net/profile/Nathan-Stevens-3) (PNSN | Unversity of Washington)<br>
