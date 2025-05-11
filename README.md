@@ -26,11 +26,11 @@ By the end of this short course, participants will be able to:
 |------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
 | 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni, UW)             | Research Talk: Ian McBreatry gives an intro to Association             | Research Talk: Felix Waldhauser shows how to build precise earthquake catalogs             |
 | 10:30 – 11:00am  | Coffee Break                          | Coffee Break                            | Coffee Break                               |
-| 11:00 – 12:30pm  | Hack: Training a Phase Picker        | Lecture: Training a Graph Network          | Hack: Event Relocations                     |
+| 11:00 – 12:30pm  | Lecture: Making and training a Phase Picker        | Lecture: Training a Graph Network          | Hack: Event Relocations                     |
 | 12:30 – 1:30pm   | Lunch                                 | Lunch                                   | Lunch                                      |
 | 1:30 – 2:30pm    | Lecture: Evaluating Model Performance                   | Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita, UW), with a tutorial                | Science talks / Karaoke / other     |
-| 2:30 – 3:00pm    | Research Talk: Amanda talk on CNN & LFE detection                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
-| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     | Hackathon: Establishing Quality Control Metrics?      |                                           |
+| 2:30 – 3:00pm    | Research Talk: ML for Cascadia LFE detection                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
+| 3:00 – 5:00pm    | Hackathon: Three ways to pick on continuous data     | Hackathon: Establishing Quality Control Metrics?      |                                           |
 
 
 ## Prerequisites  
