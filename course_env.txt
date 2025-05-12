@@ -1,0 +1,6 @@
+torch
+seisbench
+torchinfo
+matplotlib
+numpy
+ipykernel
