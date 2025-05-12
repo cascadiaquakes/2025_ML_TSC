@@ -18,6 +18,7 @@ parts:
   - file: notebooks/Amanda/apply_unet.ipynb
   - file: notebooks/Amanda/seisbench.ipynb
   - file: notebooks/Amanda/pickdb.ipynb
+  - file: notebooks/Amanda/hack1.ipynb
 - caption: Graph Neural Network - Theory
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
