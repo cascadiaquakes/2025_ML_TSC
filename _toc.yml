@@ -27,3 +27,6 @@ parts:
   chapters:
   - file: notebooks/Nate/waveform_qc.ipynb
   - file: notebooks/Nate/catalog_management.ipynb
+- caption: Event Relocation
+  chapters:
+  - file: notebooks/Felix/run_hypoDD_plot.ipynb
