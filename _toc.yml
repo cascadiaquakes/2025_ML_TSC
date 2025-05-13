@@ -8,12 +8,17 @@ parts:
 - caption: 2022 Ferndale
   chapters:
   - file: notebooks/Amanda/intro_to_ferndale.ipynb
-- caption: Seismic Phase Detection
+- caption: Seismic Phase Detection - Theory
   chapters:
   - file: notebooks/niyiyu/curated_pnw_dataset_seisbench.ipynb
   - file: notebooks/Loic/UNet/make_unet_annotated.ipynb
+- caption: Seismic Phase Detection - Practice
+  chapters:
   - file: notebooks/Amanda/unet_performance_metrics.ipynb
   - file: notebooks/Amanda/apply_unet.ipynb
+  - file: notebooks/Amanda/seisbench.ipynb
+  - file: notebooks/Amanda/pickdb.ipynb
+  - file: notebooks/Amanda/hack1.ipynb
 - caption: Graph Neural Network - Theory
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
