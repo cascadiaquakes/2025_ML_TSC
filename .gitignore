@@ -1,4 +1,6 @@
 .DS_Store
 .ipynb_checkpoints
-notebooks/data/
+notebooks/data/waveform_dataset/
 notebooks/Nate/catalog_files/
+notebooks/Nate/qc_env/*
+
