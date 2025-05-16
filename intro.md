@@ -21,14 +21,14 @@ By the end of this short course, participants will be able to:
 
 | Time             | Day 1 (Mon)                           | Day 2 (Tue)                             | Day 3 (Wed)                              |
 |------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
-| 8:30 – 9:00am    | Overview Talk: Intro to AI in Seismology (Marine Denolle)     | Research Talk: Detecting LFEs with a CNN in Cascadia (Amanda Thomas)   | Research Talk: QC Part II (Nate Stevens)       |
-| 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni)             | Research Talk: Ian McBreatry gives an intro to Association             | Research Talk: Felix Waldhauser shows how to build precise earthquake catalogs             |
-| 10:30 – 11:00am  | Coffee Break                          | Coffee Break                            | Coffee Break                               |
-| 11:00 – 12:30pm  | Hackathon: Training a Phase Picker (Loïc Bachelot)       | Lecture: Training a Graph Network          | Hack: Event Relocations                     |
-| 12:30 – 1:30pm   | Lunch                                 | Lunch                                   | Lunch                                      |
-| 1:30 – 2:30pm    | Lecture: Evaluating Model Performance                   | Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita, UW), with a tutorial                | Science talks / Karaoke / other     |
-| 2:30 – 3:00pm    | Research Talk: Amanda talk on CNN & LFE detection                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
-| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     | Hackathon: Establishing Quality Control Metrics?      |                                           |
+| 8:30 – 9:00am    | Overview Talk: Intro to AI in Seismology (Marine Denolle) | Research Talk: Detecting LFEs with a CNN in Cascadia (Amanda Thomas)   | Research Talk: QC Part II (Nate Stevens)       |
+| 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni) | Lecture: Training a Graph Network (Loic Bachelot)            | Research Talk: Felix Waldhauser shows how to build precise earthquake catalogs             |
+| 10:30 – 11:00am  | Coffee Break                          | Coffee Break | Coffee Break                               |
+| 11:00 – 12:30pm  | Lecture: Training a Phase Picker (Loïc Bachelot) |  Research talk: Intro to Association (Ian McBrearty)  | Hack: Event Relocations                     |
+| 12:30 – 1:30pm   | Lunch                                 | Lunch   | Lunch                                      |
+| 1:30 – 2:30pm    | Lecture: Training a Phase Picker v2 (Loïc Bachelot)                   		| Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita)                | Science talks / Karaoke / other     |
+| 2:30 – 3:00pm    | Lecture: Evaluating Model Performance (Amanda Thomas)                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
+| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     							| Hackathon: Establishing Quality Control Metrics?      |                                           |
 
 
 ## Prerequisites  
