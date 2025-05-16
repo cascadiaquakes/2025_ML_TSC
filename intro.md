@@ -21,14 +21,14 @@ By the end of this short course, participants will be able to:
 
 | Time             | Day 1 (Mon)                           | Day 2 (Tue)                             | Day 3 (Wed)                              |
 |------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
-| 8:30 – 9:00am    | Overview Talk: Intro to AI in Seismology (Marine Denolle) | Research Talk: Detecting LFEs with a CNN in Cascadia (Amanda Thomas)   | Research Talk: QC Part II (Nate Stevens)       |
-| 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni) | Lecture: Training a Graph Network (Loic Bachelot)            | Research Talk: Catalog Building in the age of AI (Felix Waldhauser)             |
+| 8:30 – 9:00am    | Overview Talk: Intro to AI in Seismology (Marine Denolle) | Research Talk: [Detecting LFEs with a CNN in Cascadia](./slides/lfe_cascadia.pdf) (Amanda Thomas)   | Research Talk: QC Part II (Nate Stevens)       |
+| 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni) | Lecture: [Training a Graph Network](./slides/gnn_introduction.pdf) (Loic Bachelot)            | Research Talk: Catalog Building in the age of AI (Felix Waldhauser)             |
 | 10:30 – 11:00am  | Coffee Break                          | Coffee Break | Coffee Break                               |
-| 11:00 – 12:30pm  | Lecture: Training a Phase Picker (Loïc Bachelot) |  Research talk: Intro to Association (Ian McBrearty)  | Hackathon: Event Relocations with HypoDD (Felix Waldhauser)      |
+| 11:00 – 12:30pm  | Lecture: Training a Phase Picker (Loïc Bachelot) |  Research talk: [Intro to Association](./slides/association.pdf) (Ian McBrearty)  | Hackathon: Event Relocations with HypoDD (Felix Waldhauser)      |
 | 12:30 – 1:30pm   | Lunch                                 | Lunch   | Lunch                                      |
 | 1:30 – 2:30pm    | Lecture: Training a Phase Picker v2 (Loïc Bachelot)                   		| Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita)                | Participant Lightening Talks and Wrap up     |
 | 2:30 – 3:00pm    | Lecture: Evaluating Model Performance (Amanda Thomas)                      | Lecture: Quality Control and Data Wrangling (Nate Stevens)                 |                                           |
-| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     							| Hackathon: Quality Control Metrics (Nate Stevens)     |                                           |
+| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data (Amanda Thomas)     							| Hackathon: Quality Control Metrics (Nate Stevens)     |                                           |
 
 
 ## Prerequisites  
