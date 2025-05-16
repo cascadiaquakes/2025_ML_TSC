@@ -28,7 +28,7 @@ By the end of this short course, participants will be able to:
 | 12:30 – 1:30pm   | Lunch                                 | Lunch   | Lunch                                      |
 | 1:30 – 2:30pm    | Lecture: Training a Phase Picker v2 (Loïc Bachelot)                   		| Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita)                | Participant Lightening Talks and Wrap up     |
 | 2:30 – 3:00pm    | Lecture: Evaluating Model Performance (Amanda Thomas)                      | Lecture: Quality Control and Data Wrangling (Nate Stevens)                 |                                           |
-| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data     							| Hackathon: Quality Control Metrics (Nate Stevens)     |                                           |
+| 3:00 – 5:00pm    | Hackathon: Detect and Pick on continuous Data (Amanda Thomas)     							| Hackathon: Quality Control Metrics (Nate Stevens)     |                                           |
 
 
 ## Prerequisites  
