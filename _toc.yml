@@ -20,6 +20,7 @@ parts:
   - file: notebooks/Amanda/pickdb.ipynb
   - file: notebooks/Amanda/hack1.ipynb
 - caption: Graph Neural Network - Theory
+  - file: slides/gnn_introduction.pdf
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
   - file: notebooks/Loic/GNN/GNN_node_regression_annotated.ipynb
