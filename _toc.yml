@@ -23,8 +23,9 @@ parts:
   chapters:
   - file: notebooks/Loic/GNN/GNN_pred_origin_2d_annotated.ipynb
   - file: notebooks/Loic/GNN/GNN_node_regression_annotated.ipynb
+- caption: Seismic Phase Association - Application
+  chapters:
   - file: notebooks/Ian/tutorial_run_genie_completed.ipynb
-  - file: slides/gnn_introduction.pdf
 - caption: Waveform Data QC and Catalog Wrangling
   chapters:
   - file: notebooks/Nate/waveform_qc.ipynb
