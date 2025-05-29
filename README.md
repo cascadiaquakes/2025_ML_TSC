@@ -1,4 +1,4 @@
-![Deployement of book](../../actions/workflows/deploy-book.yml/badge.svg) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cascadiaquakes/2025_ML_TSC/)  
+![Deployement of book](../../actions/workflows/deploy-book.yml/badge.svg)  
 [Link to Jupyter-book](https://cascadiaquakes.github.io/2025_ML_TSC/)
 
 # 2025 CRESCENT Machine Learning Technical Short Course
@@ -24,13 +24,14 @@ By the end of this short course, participants will be able to:
 
 | Time             | Day 1 (Mon)                           | Day 2 (Tue)                             | Day 3 (Wed)                              |
 |------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
-| 9:00 – 10:30am   | Research Talk: AI-ready Data Set for the Pacific Northwest (Yiyu Ni, UW)             | Research Talk: Ian McBreatry gives an intro to Association             | Research Talk: Felix Waldhauser shows how to build precise earthquake catalogs             |
-| 10:30 – 11:00am  | Coffee Break                          | Coffee Break                            | Coffee Break                               |
-| 11:00 – 12:30pm  | Lecture: Making and training a Phase Picker        | Lecture: Training a Graph Network          | Hack: Event Relocations                     |
-| 12:30 – 1:30pm   | Lunch                                 | Lunch                                   | Lunch                                      |
-| 1:30 – 2:30pm    | Lecture: Evaluating Model Performance                   | Research Talk: Multi-Geohazard Event Discrimination (Akash Kharita, UW), with a tutorial                | Science talks / Karaoke / other     |
-| 2:30 – 3:00pm    | Research Talk: ML for Cascadia LFE detection                      | Research Talk: Akash Kharita presents event discrimination in the PNW                  |                                           |
-| 3:00 – 5:00pm    | Hackathon: Three ways to pick on continuous data     | Hackathon: Establishing Quality Control Metrics?      |                                           |
+| 8:30 – 9:00am    | Overview Talk: [Intro to AI in Seismology](./slides/slides.pdf) (Marine Denolle) | Research Talk: [Detecting LFEs with a CNN in Cascadia](./slides/lfe_cascadia.pdf) (Amanda Thomas)   | Research Talk: QC Part II (Nate Stevens)       |
+| 9:00 – 10:30am   | Research Talk: [AI-ready Data Set for the Pacific Northwest](./slides/ml_pnw_dataset.pdf), [Notebook](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/niyiyu/curated_pnw_dataset_seisbench.html) (Yiyu Ni) | Lecture: [Training a Graph Network](./slides/gnn_introduction.pdf) (Loic Bachelot)            | Research Talk: [Catalog Building in the age of AI](./slides/eq_catalogs.pdf) (Felix Waldhauser)             |
+| 10:30 – 11:00am  | Coffee Break                          | Coffee Break | Coffee Break                               |
+| 11:00 – 12:30pm  | Lecture: [Training a Phase Picker](./slides/unet.pdf),[Notebook](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Loic/UNet/make_unet_annotated.html) (Loïc Bachelot) |  Research talk: [Intro to Association](./slides/association.pdf) (Ian McBrearty)  | Hackathon: [Event Relocations with HypoDD](./slides/dd_relocation.pdf), [Notebook](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Felix/run_hypoDD_plot.html) (Felix Waldhauser)      |
+| 12:30 – 1:30pm   | Lunch                                 | Lunch   | Lunch                                      |
+| 1:30 – 2:30pm    | Lecture: [More on training a Phase Picker](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Loic/UNet/make_unet_annotated.html)  (Loïc Bachelot)                   		| Research Talk: [Multi-Geohazard Event Discrimination (Akash Kharita)](./slides/discrimination.pdf)                | Participant Lightening Talks and Wrap up     |
+| 2:30 – 3:00pm    | Lecture: [Evaluating Model Performance](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/unet_performance_metrics.html) (Amanda Thomas)                      | Lecture: [Quality Control and Data Wrangling](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Nate/waveform_qc.html) (Nate Stevens)                 |                                           |
+| 3:00 – 5:00pm    | Hackathon: [Detect and Pick on continuous Data](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/apply_unet.html), [Seisbench](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/seisbench.html), [Pick Database](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/pickdb.html) (Amanda Thomas)     							| Hackathon: [Quality Control Metrics](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Nate/catalog_management.html) (Nate Stevens)     |                                           |
 
 
 ## Prerequisites  
@@ -58,3 +59,4 @@ By the end of this short course, participants will be able to:
 [Yiyu Ni](https://niyiyu.github.io/) (University of Washington)<br>
 [Akash Kharita](https://sites.google.com/view/akashkharita/home) (University of Washington)<br>
 [Felix Waldhauser](https://www.ldeo.columbia.edu/~felixw/) (Columbia University)<br>
+[Nate Stevens](https://www.researchgate.net/profile/Nathan-Stevens-3) (PNSN | Unversity of Washington)<br>
