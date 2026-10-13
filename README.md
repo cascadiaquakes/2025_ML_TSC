@@ -1,10 +1,17 @@
-![Deployement of book](../../actions/workflows/deploy-book.yml/badge.svg)  
-[Link to Jupyter-book](https://cascadiaquakes.github.io/2025_ML_TSC/)
-
 # 2025 CRESCENT Machine Learning Technical Short Course
+
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+
+
+
+**Course book:** https://cascadiaquakes.github.io/2025_ML_TSC/
+
+---
 
 ## Program Overview
 This three-day short course provides a hands-on introduction to machine learning techniques for seismic event analysis. Participants will learn to develop AI-aided earthquake catalogs through three key steps: event detection, association, and location with quality control. The course covers neural network architecture selection, model training, performance metrics, and application to continuous seismic data. The workshop will include a mix of presentations and hands-on tutorials.  The final day will include a participant hack-a-thon in which students attempt to develop a machine learning based quality control workflow to apply to future generations of machine learning earthquake catalogs.
+
+---
 
 ## Learning Goals and Objectives
 
@@ -20,7 +27,9 @@ By the end of this short course, participants will be able to:
 - Design end-to-end machine learning workflows tailored to specific seismic networks or research needs. 
 - Collaborate on participant-led exercises to improve catalog quality and reliability. 
 
-##  Agenda
+---
+
+## Agenda
 
 | Time             | Day 1 (Mon)                           | Day 2 (Tue)                             | Day 3 (Wed)                              |
 |------------------|----------------------------------------|------------------------------------------|-------------------------------------------|
@@ -33,8 +42,9 @@ By the end of this short course, participants will be able to:
 | 2:30 – 3:00pm    | Lecture: [Evaluating Model Performance](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/unet_performance_metrics.html) (Amanda Thomas)                      | Lecture: [Quality Control and Data Wrangling](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Nate/waveform_qc.html) (Nate Stevens)                 |                                           |
 | 3:00 – 5:00pm    | Hackathon: [Detect and Pick on continuous Data](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/apply_unet.html), [Seisbench](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/seisbench.html), [Pick Database](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Amanda/pickdb.html) (Amanda Thomas)     							| Hackathon: [Quality Control Metrics](https://cascadiaquakes.github.io/2025_ML_TSC/notebooks/Nate/catalog_management.html) (Nate Stevens)     |                                           |
 
+---
 
-## Prerequisites  
+## Prerequisites
 
 1. Participants must have intermediate python skills including: 
 
@@ -49,6 +59,7 @@ By the end of this short course, participants will be able to:
 
 2. Must have a laptop computer capable of accessing the internet. 
 
+---
 
 ## Instructors
 
@@ -60,3 +71,26 @@ By the end of this short course, participants will be able to:
 [Akash Kharita](https://sites.google.com/view/akashkharita/home) (University of Washington)<br>
 [Felix Waldhauser](https://www.ldeo.columbia.edu/~felixw/) (Columbia University)<br>
 [Nate Stevens](https://www.researchgate.net/profile/Nathan-Stevens-3) (PNSN | Unversity of Washington)<br>
+
+---
+
+## License
+
+This project is licensed under the BSD 3-Clause License. See [LICENSE](LICENSE).
+
+---
+
+## Acknowledgments
+
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/cascadiaquakes/.github/main/assets/crescent-circle.png" alt="CRESCENT Logo" width="150" />
+    </td>
+    <td align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/cascadiaquakes/.github/main/assets/nsf-logo.png" alt="NSF Logo" width="450" />
+    </td>
+  </tr>
+</table>
+
+This project is supported by the National Science Foundation through the Cascadia Region Earthquake Science Center (CRESCENT), Cooperative Agreement EAR-2225286.
